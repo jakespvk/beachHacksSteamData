@@ -6,11 +6,12 @@
 </head>
 <body>
 <script>
-function getData(var data) {
-  return 
+function getData() {
+  var input = document.getElementById("steamid").value;
+  return "hello world";
 }
-function printData(var data) {
-  document.getElementById("output").innerHTML = getData(data);
+function printData() {
+  document.getElementById("output").innerHTML = getData();
 }
 </script>
 <h1>Steam Tracker</h1>
@@ -18,7 +19,7 @@ function printData(var data) {
 <form>
   <fieldset>
     <legend>Enter a link to your Steam Profile</legend>
-    Steam ID: <input type="text"><br>
+    Steam ID: <input id="steamid" type="text"><br>
   </fieldset>
 </form>
 <button onclick="printData(steamid)">Enter</button>
