@@ -5,15 +5,23 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<script>
+function getData(var data) {
+  return 
+}
+function printData(var data) {
+  document.getElementById("output").innerHTML = getData(data);
+}
+</script>
 <h1>Steam Tracker</h1>
 <div>Steam Tracker will show you interesting data about your Steam activity.</div>
 <form>
   <fieldset>
     <legend>Enter a link to your Steam Profile</legend>
-    <input type="text"><br>
+    Steam ID: <input type="text"><br>
   </fieldset>
 </form>
-<button>Enter</button>
-
+<button onclick="printData(steamid)">Enter</button>
+<p id=output></p>
 </body>
 </html>
